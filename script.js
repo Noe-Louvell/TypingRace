@@ -8,7 +8,19 @@ function init(){
 
     let gameStarted = false;
 
-    gameZone.addEventListener('?', function(e){
+    gameZone.addEventListener('keydown', function(e){
+        if (gameStarted === false){
+            chronoStart();
+            gameStarted = true;
+        }
+
+    });
+
+    gameZone.addEventListener('keyup', function(e){
+        if (gameZone.value === wordToType){
+            chronoStop()
+
+        }
 
     });
 }
