@@ -1,9 +1,8 @@
 init();
 function init(){
-    let timer = //
-        let gameZone = //
-
-        let wordToType = "WIN";
+    let timer = document.getElementById("chronotime");
+    let gameZone = document.getElementById("game-zone");
+    let wordToType = "Sauce";
 
     timer.innerHTML = "00s000";
 
@@ -23,7 +22,7 @@ function init(){
 
 
 
-
+//Chrono
 
 function chrono(){
     end = new Date();
