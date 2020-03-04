@@ -2,7 +2,7 @@ init();
 function init(){
     let timer = document.getElementById("chronotime");
     let gameZone = document.getElementById("game-zone");
-    let wordToType = "Sauce";
+    let wordToType = "Rhododendron";
 
     timer.innerHTML = "00s000";
 
@@ -19,7 +19,6 @@ function init(){
     gameZone.addEventListener('keyup', function(e){
         if (gameZone.value === wordToType){
             chronoStop()
-
         }
 
     });
